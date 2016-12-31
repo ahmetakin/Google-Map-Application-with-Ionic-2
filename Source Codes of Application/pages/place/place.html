@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+    NY State Historic Site List
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page" >
+<ion-card *ngFor="let site of sites" (click)="moreInfo(site.id)">
+  <img src="http://server/img/{{site.image}}"/>
+  <div class="card-title">{{site.name}}</div>
+  <div class="card-subtitle">Touch for More Information</div>
+</ion-card>
+</ion-content>
